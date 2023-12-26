@@ -1,0 +1,29 @@
+apiVersion: Backstage.io/v1beta2
+kinf: Template
+metadata:
+    name: dotnet7-webapi-template
+    title: .Net Web API Service
+    description: Create a simple .Net 7 microservice that provides a Web API
+    tags:
+    - recommended
+    - dotnet
+    - webapi
+spec:
+    owner: ER
+    type: service
+
+    parameters:
+     - title: Provide component information
+        required:
+         - component_id
+         - owner
+        properties:
+            component_id:
+                title: name
+                type: string
+                description: Unique name
+            desscription:
+                title: Description
+                type: string
+                description: Add a desription
+            
